@@ -42,7 +42,7 @@ class EVENT
 		curl_setopt( $ch, CURLOPT_HTTPHEADER, $header );
 		curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, $crud );
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-		curl_setopt( $ch, CURLOPT_USERAGENT, 'Torch - NationBuilder' );
+		curl_setopt( $ch, CURLOPT_USERAGENT, 'Atac - NationBuilder' );
 		$response  = curl_exec( $ch );
 		$this->status = curl_getinfo( $ch, CURLINFO_HTTP_CODE );
 		if ( $response === false )
